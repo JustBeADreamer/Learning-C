@@ -1,2 +1,2 @@
 # Learning-C
-Repository for C programming
+Repository for C prograim testing
