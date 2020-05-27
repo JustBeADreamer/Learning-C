@@ -1,5 +1,12 @@
 #include "header.h"
 
+struct list_t* head=NULL;
+struct list_t* cur=NULL;
+
+
+char filename[]="phonebook";
+FILE *fp;
+
 struct list_t *Make_new_node(){
 
     system("cls");

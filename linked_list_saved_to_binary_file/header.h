@@ -16,13 +16,6 @@ struct list_t{
     struct list_t *next;
 };
 
-struct list_t* head=NULL;
-struct list_t* cur=NULL;
-
-
-char filename[]="phonebook";
-FILE *fp;
-
 struct list_t *Make_new_node();
 
 void insertFirst();
