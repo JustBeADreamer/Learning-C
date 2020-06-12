@@ -19,14 +19,7 @@ struct list_t{
 
 typedef struct list_t Node;
 
-Node *head=NULL;
-Node *cur=NULL;
-
-
-char filename[]="phonebook";
-FILE *fp;
-
-struct list_t *Make_new_node();
+Node *Make_new_node();
 
 void insertFirst();
 
@@ -43,6 +36,3 @@ void print_list();
 int Write_to_file();
 
 int Read_from_file();
-
-
-
