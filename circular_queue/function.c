@@ -1,20 +1,4 @@
-#include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
-#define MAXLEN 5
-
-
-
-struct Queue{
-    int data[MAXLEN];
-    int Front, Rear; 
-};
-
-struct Queue Q;
-
-
-
-
+#include "header.h"
 
 int Is_full(struct Queue *Q){
     if((Q->Rear-Q->Front+1)%5==0){
@@ -91,32 +75,4 @@ void Print_Queue(struct Queue Q){
         }
     }
     
-}
-
-
-int main(){
-    int data, n;
-    Make_Null(&Q);
-    loop:
-    system("cls");
-    printf("choose: \n");
-    scanf("%d", &n);
-    switch (n){
-        case 1:
-            system("cls");
-            printf("input data: \n");
-            scanf("%d", &data);
-            En_Queue(data, &Q);
-            goto loop;
-        case 2:
-            system("cls");
-            De_Queue(&data, &Q);
-            printf("the out data: %d\n", data);
-            goto loop;
-        case 3:
-            system("cls");
-            Print_Queue(Q);
-            goto loop;
-    }
-    return 0;
 }

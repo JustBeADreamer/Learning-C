@@ -19,6 +19,14 @@ struct list_t{
 
 typedef struct list_t Node;
 
+Node *head=NULL;
+Node *cur=NULL;
+
+
+char filename[]="phonebook";
+FILE *fp;
+
+
 Node *Make_new_node();
 
 void insertFirst();

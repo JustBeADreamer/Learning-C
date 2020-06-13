@@ -1,12 +1,6 @@
 #include "header.h"
 
 
-Node *head=NULL;
-Node *cur=NULL;
-
-
-char filename[]="phonebook";
-FILE *fp;
 
 
 
