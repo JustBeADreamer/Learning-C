@@ -25,10 +25,15 @@ void push(int DATA, struct Stack_t* stack){
 
 
 void pop(int *DATA, struct Stack_t* stack){
-    if(Is_empty(stack->top)){
+    if(!Is_empty(stack->top)){
         stack->top--;
         *DATA=stack->DATA[stack->top];
     }
+    else
+    {
+        printf("Stack under flow");
+    }
+    
 }
 
 void Make_NULL(struct Stack_t* stack){
