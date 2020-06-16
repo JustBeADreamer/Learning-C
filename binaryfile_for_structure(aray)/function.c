@@ -13,7 +13,6 @@ int Read_from_file(FILE *fp, address *arr){
     fseek(fp, 0, SEEK_END);
     num=ftell(fp)/sizeof(address);
     rewind(fp);
-    
     fread(arr, sizeof(address), (int)num, fp);
     return (int)num;
 }
